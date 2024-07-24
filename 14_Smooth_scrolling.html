@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        background:white;
+        margin: 0;
+        height: 100vh;
+        overflow-y: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+        
+    }
+    div{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 200px;;
+        font-size: 30px;
+        border-radius: 20px;
+    }
+    .red{
+        background: red;
+    }
+    .green{
+        background: green;
+    }
+    .yellow{
+        background: yellow;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="red">red</div>
+    <div class="green">green</div>
+    <div class="yellow">yellow</div>
+    <div class="red">red</div>
+    <div class="green">green</div>
+    <div class="yellow">yellow</div>
+      
+    <div class="red">red</div>
+    <div class="green">green</div>
+    <div class="yellow">yellow</div>
+    <div class="red">red</div>
+    <div class="green">green</div>
+    <div class="yellow">yellow</div>
+      
+    <div class="red">red</div>
+    <div class="green">green</div>
+    <div class="yellow">yellow</div>
+    <div class="red">red</div>
+    <div class="green">green</div>
+    <div class="yellow">yellow</div>
+    
+    
+    <button>scroll to top</button>
+    <script>
+        let button = document.querySelector("button");
+        function smoothScrollToTop() {
+    // Scroll to the top of the page smoothly
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+
+    });
+}
+
+// Example usage:
+
+// Call this function when you want to scroll to the top
+
+button.addEventListener("click",smoothScrollToTop);
+
+    </script>
+</body>
+</html>
